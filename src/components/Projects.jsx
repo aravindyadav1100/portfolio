@@ -19,14 +19,14 @@ const Projects = () => {
   }, []);
 
   const featuredProjects = [
-    {
-      title: 'Social Media Web Application',
-      status: 'In Progress',
-      description: 'A responsive social media web application with user profiles, posts, notifications, likes, comments, registration, login, form validation, routing, and centralized state management.',
-      tech: ['React.js', 'Redux Toolkit', 'JavaScript', 'HTML5', 'CSS3', 'React Router', 'Fetch API', 'JSON Server'],
-      githubUrl: '', // Add your GitHub repository URL after you push the project.
-      liveUrl: '', // Add your Vercel/live URL after deployment.
-    },
+    // {
+    //   title: 'Social Media Web Application',
+    //   status: 'In Progress',
+    //   description: 'A responsive social media web application with user profiles, posts, notifications, likes, comments, registration, login, form validation, routing, and centralized state management.',
+    //   tech: ['React.js', 'Redux Toolkit', 'JavaScript', 'HTML5', 'CSS3', 'React Router', 'Fetch API', 'JSON Server'],
+    //   githubUrl: '', // Add your GitHub repository URL after you push the project.
+    //   liveUrl: '', // Add your Vercel/live URL after deployment.
+    // },
   ];
 
   return (
@@ -64,7 +64,7 @@ const Projects = () => {
 
         <div className="w-full lg:w-2/3 flex flex-col gap-8">
           <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, ease: 'easeOut' }} viewport={{ once: false, amount: 0.4 }}>
-            <h3 className="text-3xl sm:text-4xl font-bold text-textBright mb-8">Featured Projects</h3>
+            {/* <h3 className="text-3xl sm:text-4xl font-bold text-textBright mb-8">Featured Projects</h3> */}
           </motion.div>
           <div className="grid grid-cols-1 gap-6">
             {featuredProjects.map((project, index) => (
